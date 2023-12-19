@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Capybara",
+      "body": "Одиночество",
+      "img": "https://petstime.ru/wp-content/uploads/2023/04/word-image-13637-10.jpeg",
+      "code": "1",
+      "provider": "Бразилия"
+    },
+    {
+      "title": "Capybara's family",
+      "img": "https://petstime.ru/wp-content/uploads/2023/04/word-image-13637-8.jpeg",
+      "id": 2,
+      "provider": "Бразилия",
+      "body": "Капибара не одинока"
+    }
+  ],
+  "creatorInfo": {
+    "name": "Беляев Иван",
+    "group": "6409",
+    "repo": "https://github.com/Bivrey"
+  }
+}
