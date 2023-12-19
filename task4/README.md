@@ -8,3 +8,4 @@
 ![image](https://github.com/Bivrey/WebTink/assets/99673633/0b0ff418-5e42-4397-9c3f-e7813fd347fb)
 После нажатия кнопки "Вернуться в начало" мы возвращаемся к начальному отображению
 ![image](https://github.com/Bivrey/WebTink/assets/99673633/f82144cc-6352-43e7-9fc7-cfc45e5d4c52)
+Запустить сервер: json-server --watch db.json
