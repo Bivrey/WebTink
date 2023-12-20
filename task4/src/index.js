@@ -43,6 +43,12 @@ async function editCard(data){
     spinner.style.display = 'none';
     return res.json()}).catch((e) => console.error(e));
 }
+async function addItems(items) {
+    for (const item of items) {
+        await addItem(item);
+    }
+}
+
 async function addItem(data){
   spinner.style.display = 'flex';
   const res = await fetch('http://localhost:3000/items', {
@@ -165,21 +171,21 @@ const toDefault = document.getElementById('defaultClick');
 toDefault.addEventListener('click', () => {
     const items = [
         {
-            title: "Capybara",
-            img: "https://petstime.ru/wp-content/uploads/2023/04/word-image-13637-10.jpeg",
-            body: "Одиночество - Капибара",
-            id: 1,
-            deliever: "Бразилия",
+            "id": "1",
+            "title": "Capybara",
+            "body": "Одиночество - Капибара",
+            "img": "https://petstime.ru/wp-content/uploads/2023/04/word-image-13637-10.jpeg",
+            "deliever": "Бразилия"
         },
         {
-            title: "Capybara's family",
-            img: "https://petstime.ru/wp-content/uploads/2023/04/word-image-13637-8.jpeg",
-            body: "Капибара не одинока",
-            id: 2,
-            deliever: "Бразилия",
-        },
+            "title": "Capybara's family",
+            "img": "https://petstime.ru/wp-content/uploads/2023/04/word-image-13637-8.jpeg",
+            "id": "2",
+            "deliever": "Бразилия",
+            "body": "Капибара не одинока"
+        }
     ];
-  clearAllItems().then(() => addItem(data).then(() => window.location.reload()))
+  clearAllItems().then(() => addItems(items).then(() => window.location.reload()))
 });
 form.addEventListener("submit", (evt) => {
     evt.preventDefault();
