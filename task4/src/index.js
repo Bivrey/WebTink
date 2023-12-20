@@ -135,7 +135,7 @@ function addCard({ title, img, body, id, deliever, code}) {
     //id
     const idContainer = document.createElement("p");
     idContainer.classList.add("id");
-    idContainer.append(document.createTextNode(`Код товара: ${code}`));
+    idContainer.append(document.createTextNode(`Код товара: ${id}`));
 
     const buttonContainer = document.createElement("div");
     const editBtn = createButton(true, title, img, body, id, deliever);
